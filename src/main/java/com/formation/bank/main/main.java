@@ -1,16 +1,14 @@
 package com.formation.bank.main;
 
-import com.formation.bank.entities.Compte;
-import com.formation.bank.entities.CompteCourant;
-import com.formation.bank.entities.CompteEpargne;
+import com.formation.bank.dao.ClientDAO;
+import com.formation.bank.dao.CompteDAO;
 
 public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	
-CompteCourant CC=new CompteCourant();
-CompteEpargne CE=new CompteEpargne();
+ClientDAO cldao= new ClientDAO();
+
 
 	}
 

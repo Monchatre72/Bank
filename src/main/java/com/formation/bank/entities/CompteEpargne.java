@@ -25,16 +25,7 @@ public class CompteEpargne extends Compte implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CompteEpargne(String numCompte, Date dateCreation, double solde, Client client, Employe employe,
-			double taux) {
-
-		this.numCompte = numCompte;
-		this.dateCreation = dateCreation;
-		this.solde = solde;
-		this.client = client;
-		this.employe = employe;
-		this.taux = taux;
-	}
+	
 
 	public double getTaux() {
 		return taux;

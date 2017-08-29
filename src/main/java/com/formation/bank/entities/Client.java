@@ -23,7 +23,7 @@ public class Client implements Serializable {
 
 @Id
 @GeneratedValue
-@Column(name = "CODE_CLI",unique=true)
+@Column(name = "CODE_CLI")
 private Long code;
 
 @Column(name = "NOM_CLI")

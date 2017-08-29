@@ -30,26 +30,26 @@ public abstract class Compte implements Serializable {
 
 	@Id
 	@GeneratedValue
-	@Column(name= "NUM_CPTE",unique=true)
-	protected String numCompte;
+	@Column(name= "NUM_CPTE")
+	private Integer numCompte;
 	
 	@Column(name="DATE_CR")
 	@Temporal(TemporalType.DATE)
-	protected Date dateCreation;
+	private Date dateCreation;
 	
 	@Column(name="SOLDE")
-	protected double solde;
+	private double solde;
 	
 	@OneToMany(cascade=CascadeType.REMOVE,mappedBy="compte",fetch=FetchType.LAZY)
-	protected List<Operation> operations;
+	private List<Operation> operations;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "CODE_CLI")
-	protected Client client; 
+	private Client client; 
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "NUM_EMP")
-	protected Employe employe;
+	private Employe employe;
 	
 	
 	public Compte() {
@@ -57,7 +57,7 @@ public abstract class Compte implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Compte(String numCompte, Date dateCreation, double solde, Client client, Employe employe) {
+	public Compte(Integer numCompte, Date dateCreation, double solde, Client client, Employe employe) {
 
 		this.numCompte = numCompte;
 		this.dateCreation = dateCreation;
@@ -66,18 +66,6 @@ public abstract class Compte implements Serializable {
 		this.employe = employe;
 	}
 
-
-
-
-
-	public String getNumCompte() {
-		return numCompte;
-	}
-
-
-	public void setNumCompte(String numCompte) {
-		this.numCompte = numCompte;
-	}
 
 
 	public Date getDateCreation() {

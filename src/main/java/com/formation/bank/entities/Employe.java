@@ -25,7 +25,7 @@ public class Employe implements Serializable {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "NUM_EMP",unique=true)
+	@Column(name = "NUM_EMP")
 	private Long codeEmploye;
 	
 	@Column(name = "NOM_EMP")

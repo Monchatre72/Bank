@@ -22,17 +22,7 @@ public class CompteCourant extends Compte implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CompteCourant(String numCompte, Date dateCreation, double solde, Client client, Employe employe,
-			double decouvert) {
-
-		this.numCompte = numCompte;
-		this.dateCreation = dateCreation;
-		this.solde = solde;
-		this.client = client;
-		this.employe = employe;
-		this.decouvert = decouvert;
-	}
-
+	
 	public double getDecouvert() {
 		return decouvert;
 	}

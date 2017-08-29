@@ -29,7 +29,7 @@ public abstract class Operation implements Serializable {
 
 	@Id
 	@GeneratedValue
-	@Column(name="NUM_OP",unique=true)
+	@Column(name="NUM_OP")
 	private long numOperation;
 
 	@Column(name="DATE_OP")
